@@ -18,11 +18,12 @@ const Hero = () => {
       color: 'hover:text-blue-600'
     },
     {
-      name: 'Email',
-      icon: FiMail,
-      url: 'https://mail.google.com/mail/u/0/#inbox?compose=new',
-      color: 'hover:text-red-500'
-    }
+  name: 'Email',
+  icon: FiMail,
+  url: 'https://mail.google.com/mail/?view=cm&fs=1&to=shubhammodi2003@gmail.com',
+  color: 'hover:text-red-500'
+}
+
   ];
 
   return (
