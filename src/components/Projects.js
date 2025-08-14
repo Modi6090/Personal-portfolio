@@ -21,7 +21,7 @@ const Projects = () => {
       image: "media/image-recon-app.png",
       techStack: ["React.js", "Python", "Flask", "OpenCV", "Tesseract", "Tailwind CSS"],
       github: "https://github.com/Modi6090/image-recognition-ocr",
-      live: "https://image-recognition-ocr-demo.vercel.app",
+      live: "https://image-recon-app.vercel.app/",
       category: "AI/ML"
     },
     {
