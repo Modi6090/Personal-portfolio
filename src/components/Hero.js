@@ -20,7 +20,7 @@ const Hero = () => {
     {
       name: 'Email',
       icon: FiMail,
-      url: 'shubhammodi2003@gmail.com',
+      url: 'https://mail.google.com/mail/u/0/#inbox?compose=new',
       color: 'hover:text-red-500'
     }
   ];
