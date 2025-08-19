@@ -28,10 +28,10 @@ const Projects = () => {
       id: 3,
       title: "Resume Feedback using AI",
       description: "An AI-powered resume analysis tool that provides intelligent feedback and suggestions for improving resumes. Features include skill assessment, ATS optimization, and personalized recommendations for better job applications.",
-      image: "https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=Resume+Feedback+AI",
+      image: "media/resume-feedback.png",
       techStack: ["React.js", "Python", "FastAPI", "OpenAI", "NLP", "Machine Learning"],
       github: "https://github.com/Modi6090/resume-feedback-ai",
-      live: "https://resume-feedback-ai-demo.vercel.app",
+      live: "https://resumefeedback-wrzrat9rkypf3g5frejsrf.streamlit.app/",
       category: "AI/ML"
     },
     {
