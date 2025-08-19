@@ -39,17 +39,26 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 px-4">
+        <div className="flex items-center justify-between h-16 px-2 sm:px-4">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold gradient-text"
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-64}
+            duration={500}
+            className="cursor-pointer"
           >
-            SM
-          </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="text-2xl font-bold gradient-text"
+            >
+              SM
+            </motion.div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -94,7 +103,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden bg-white dark:bg-dark-800 shadow-lg"
           >
-            <div className="px-4 py-2 space-y-2">
+            <div className="px-2 py-2 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}

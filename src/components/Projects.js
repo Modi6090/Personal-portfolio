@@ -36,9 +36,9 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Blog API",
-      description: "A RESTful API for a blogging platform with user authentication, CRUD operations, image upload, and search functionality. Built with best practices and comprehensive documentation.",
-      image: "https://via.placeholder.com/600x400/F59E0B/FFFFFF?text=Blog+API",
+      title: "Jarvis - Personal Assistant",
+      description: "Jarvis - Personal Assistant is an intelligent virtual assistant designed to automate daily tasks, answer queries, and manage schedules using natural language processing. It integrates with various APIs to provide weather updates, reminders, and personalized recommendations, offering a seamless and interactive user experience.",
+      image: "media/Jarvis.png",
       techStack: ["Node.js", "Express.js", "MongoDB", "JWT", "Multer"],
       github: "https://github.com/Modi6090/blog-api",
       live: "https://blog-api-demo.herokuapp.com",
@@ -62,7 +62,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-dark-800">
+  <section id="projects" className="section-padding bg-gray-50 dark:bg-dark-800 px-2 sm:px-0">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,7 +80,7 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+  <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -114,16 +114,16 @@ const Projects = () => {
               </div>
 
               {/* Project Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
                   {project.description}
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
@@ -135,7 +135,7 @@ const Projects = () => {
                 </div>
 
                 {/* Project Links */}
-                <div className="flex space-x-4">
+                <div className="flex flex-col sm:flex-row gap-2 sm:space-x-4">
                   <motion.a
                     href={project.github}
                     target="_blank"

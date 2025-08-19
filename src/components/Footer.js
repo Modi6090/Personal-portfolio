@@ -19,22 +19,22 @@ const Footer = () => {
     {
       name: "Email",
       icon: FiMail,
-      url: "shubhammodi2003@gmail.com",
+      url: "mailto:shubhammodi2003@gmail.com",
       color: "hover:text-red-500"
     }
   ];
 
   return (
-    <footer className="bg-gray-900 dark:bg-dark-900 text-white py-12">
+  <footer className="bg-gray-900 dark:bg-dark-900 text-white py-8 sm:py-12 px-2 sm:px-0">
       <div className="container-custom">
-        <div className="text-center">
+  <div className="text-center">
           {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex justify-center space-x-6 mb-8"
+            className="flex justify-center space-x-4 sm:space-x-6 mb-6 sm:mb-8"
           >
             {socialLinks.map((social) => (
               <motion.a
@@ -57,7 +57,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-gray-400 dark:text-gray-500"
+            className="text-gray-400 dark:text-gray-500 text-sm sm:text-base"
           >
             <p className="text-lg font-medium">
               Crafted with <FiHeart className="inline text-red-500 animate-pulse" /> by{' '}
@@ -74,9 +74,9 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="mt-8 pt-8 border-t border-gray-800 dark:border-dark-700"
+            className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-800 dark:border-dark-700"
           >
-            <p className="text-gray-500 dark:text-gray-600 text-sm">
+            <p className="text-gray-500 dark:text-gray-600 text-xs sm:text-sm">
               © {new Date().getFullYear()} Shubham Modi. All rights reserved.
             </p>
           </motion.div>

@@ -70,7 +70,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-white dark:bg-dark-900">
+  <section id="skills" className="section-padding bg-white dark:bg-dark-900 px-2 sm:px-0">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -87,7 +87,7 @@ const Skills = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
@@ -95,7 +95,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
-              className="card p-6"
+              className="card p-6 sm:p-8"
             >
               {/* Category Header */}
               <div className="flex items-center space-x-3 mb-6">
@@ -117,7 +117,7 @@ const Skills = () => {
                     transition={{ duration: 0.6, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
                     viewport={{ once: true }}
                   >
-                    <div className="flex justify-between items-center mb-2">
+                    <div className="flex justify-between items-center mb-1 sm:mb-2">
                       <span className="text-gray-700 dark:text-gray-300 font-medium">
                         {skill.name}
                       </span>
@@ -125,13 +125,13 @@ const Skills = () => {
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 dark:bg-dark-700 rounded-full h-2">
+                    <div className="w-full bg-gray-200 dark:bg-dark-700 rounded-full h-1.5 sm:h-2">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-r from-primary-400 to-primary-600 h-2 rounded-full"
+                        className="bg-gradient-to-r from-primary-400 to-primary-600 h-1.5 sm:h-2 rounded-full"
                       ></motion.div>
                     </div>
                   </motion.div>
@@ -147,20 +147,19 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16"
+          className="mt-10 sm:mt-16"
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-8">
             Future Skills I'm Learning
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {[
-              { name: "TypeScript", icon: FiCode },
-              { name: "Python", icon: FiZap },
-              { name: "CI/CD", icon: FiSettings },
+              { name: "Terraform", icon: FiCode },
+              { name: "Python", icon: FiZap },  
               { name: "Cloud (AWS/Azure)", icon: FiGlobe },
               { name: "Machine Learning", icon: FiLayers },
-              { name: "Mobile Development", icon: FiSmartphone },
-              { name: "GraphQL", icon: FiDatabase },
+              { name: "GraphQL", icon: FiSmartphone },
+              { name: "Kubernetes", icon: FiDatabase },
               { name: "Microservices", icon: FiServer }
             ].map((skill, index) => (
               <motion.div
@@ -169,7 +168,7 @@ const Skills = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center p-4 bg-gray-50 dark:bg-dark-800 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-700 transition-colors duration-300"
+                className="text-center p-6 bg-gray-50 dark:bg-dark-800 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-700 transition-colors duration-300"
               >
                 <div className="p-2 bg-primary-100 dark:bg-primary-900 rounded-lg inline-block mb-2">
                   <skill.icon className="text-primary-600 dark:text-primary-400" size={20} />
