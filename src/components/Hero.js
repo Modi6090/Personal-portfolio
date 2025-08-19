@@ -25,10 +25,6 @@ const Hero = () => {
     }
   ];
 
-  
-};
-
-
   const techIcons = [
     { icon: FiCode, label: 'Frontend' },
     { icon: FiServer, label: 'Backend' },
