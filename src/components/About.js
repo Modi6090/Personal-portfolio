@@ -10,11 +10,16 @@ const About = () => {
     { icon: FiCode, label: 'Learning Style', value: 'Self-Taught Developer' }
   ];
 
-  const timeline = [
+const timeline = [
     {
-      year: '2025',
-      title: 'Full Stack Development',
-      description: 'Self-taught full-stack development using React.js, Node.js, and MongoDB. Built multiple projects to master modern web technologies.'
+       year: '2022',
+      title: 'First Steps in Tech',
+      description: 'Discovered my passion for technology and started exploring programming concepts through online resources and tutorials.'
+    },
+    {
+     year: '2023',
+      title: 'Computer Science Student',
+      description: 'Started my Computer Science Engineering journey with a focus on programming fundamentals and problem-solving.'
     },
     {
       year: '2024',
@@ -22,16 +27,12 @@ const About = () => {
       description: 'Started self-learning HTML, CSS, JavaScript and began building web applications. Explored various frameworks and tools.'
     },
     {
-      year: '2023',
-      title: 'Computer Science Student',
-      description: 'Started my Computer Science Engineering journey with a focus on programming fundamentals and problem-solving.'
-    },
-    {
-      year: '2022',
-      title: 'First Steps in Tech',
-      description: 'Discovered my passion for technology and started exploring programming concepts through online resources and tutorials.'
+      year: '2025',
+      title: 'Full Stack Development',
+      description: 'Self-taught full-stack development using React.js, Node.js, and MongoDB. Built multiple projects to master modern web technologies.'
     }
   ];
+
 
   return (
   <section id="about" className="section-padding bg-white dark:bg-dark-900 px-2 sm:px-0">

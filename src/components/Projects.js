@@ -40,7 +40,7 @@ const Projects = () => {
       description: "Jarvis - Personal Assistant is an intelligent virtual assistant designed to automate daily tasks, answer queries, and manage schedules using natural language processing. It integrates with various APIs to provide weather updates, reminders, and personalized recommendations, offering a seamless and interactive user experience.",
       image: "media/Jarvis.png",
       techStack: ["Node.js", "Express.js", "MongoDB", "JWT", "Multer"],
-      github: "https://github.com/Modi6090/blog-api",
+      github: "https://github.com/Modi6090/Jarvis",
       live: "https://blog-api-demo.herokuapp.com",
       category: "Backend"
     }
