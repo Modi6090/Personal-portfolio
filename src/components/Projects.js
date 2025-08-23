@@ -10,8 +10,8 @@ const Projects = () => {
       description: "A comprehensive stock trading platform with real-time market data, portfolio management, and trading functionalities. Features include live price updates, technical analysis tools, and user-friendly interface for both beginners and experienced traders.",
       image: "media/stock-trading.png",
       techStack: ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io", "Chart.js"],
-      github: "https://github.com/Modi6090/stock-trading-platform",
-      live: "https://stock-trading-platform-demo.vercel.app",
+      github: "https://github.com/Modi6090/Stck-trading-Platform",
+      // live: "https://stock-trading-platform-demo.vercel.app",
       category: "Full Stack"
     },
     {
@@ -20,8 +20,8 @@ const Projects = () => {
       description: "An intelligent image recognition website that uses OCR (Optical Character Recognition) technology to extract and process text from images. Features include text extraction, document scanning, and support for multiple image formats.",
       image: "media/image-recon-app.png",
       techStack: ["React.js", "Python", "Flask", "OpenCV", "Tesseract", "Tailwind CSS"],
-      github: "https://github.com/Modi6090/image-recognition-ocr",
-      live: "https://image-recon-app.vercel.app/",
+      github: "https://github.com/Modi6090/image-recon-app",
+      // live: "https://image-recon-app.vercel.app/",
       category: "AI/ML"
     },
     {
@@ -30,8 +30,8 @@ const Projects = () => {
       description: "An AI-powered resume analysis tool that provides intelligent feedback and suggestions for improving resumes. Features include skill assessment, ATS optimization, and personalized recommendations for better job applications.",
       image: "media/resume-feedback.png",
       techStack: ["React.js", "Python", "FastAPI", "OpenAI", "NLP", "Machine Learning"],
-      github: "https://github.com/Modi6090/resume-feedback-ai",
-      live: "https://resumefeedback-wrzrat9rkypf3g5frejsrf.streamlit.app/",
+      github: "https://github.com/Modi6090/resumeFeedback",
+      // live: "https://resumefeedback-wrzrat9rkypf3g5frejsrf.streamlit.app/",
       category: "AI/ML"
     },
     {
@@ -41,7 +41,7 @@ const Projects = () => {
       image: "media/Jarvis.png",
       techStack: ["Node.js", "Express.js", "MongoDB", "JWT", "Multer"],
       github: "https://github.com/Modi6090/Jarvis",
-      live: "https://blog-api-demo.herokuapp.com",
+      // live: "https://blog-api-demo.herokuapp.com",
       category: "Backend"
     }
   ];
@@ -155,8 +155,8 @@ const Projects = () => {
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300"
                   >
-                    <FiExternalLink size={20} />
-                    <span className="font-medium">Live Demo</span>
+                    {/* <FiExternalLink size={20} /> */}
+                    {/* <span className="font-medium">Live Demo</span> */}
                   </motion.a>
                 </div>
               </div>
